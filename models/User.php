@@ -239,11 +239,11 @@ class User extends ActiveRecord implements IdentityInterface
             'emailRequired' => ['email', 'required', 'on' => ['register', 'connect', 'create', 'update']],
             'emailPattern'  => ['email', 'email'],
             'emailLength'   => ['email', 'string', 'max' => 255],
-            'emailUnique'   => [
+            /*'emailUnique'   => [
                 'email',
                 'unique',
                 'message' => \Yii::t('user', 'This email address has already been taken')
-            ],
+            ],*/
 
             // password rules
             'passwordRequired' => ['password', 'required', 'on' => ['register']],
